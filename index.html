@@ -11,22 +11,22 @@
       <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="">Startseite</a></li>
-                <li><a href="">Über mich</a></li>
-                <li><a href="">Galerie</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li><a href="#Startseite">Startseite</a></li>
+                <li><a href="#Über mich">Über mich</a></li>
+                <li><a href="#Galerie">Galerie</a></li>
+                <li><a href="#Anmelden">Anmelden</a></li>
             </ul>
         </nav>
   </header>
   <!-- Start Main -->
   <main>
   <!--Start Hero-->
-    <section>
+    <section id="Startseite">
       <h1>Bilderecke</h1>
       <h3>Tier und Landschaftsfotografie</h3>
     </section>
   <!--start Über mich-->
-  <section>
+  <section id="Über mich">
     <div>
       <h2>Über mich</h2>
       <p>
@@ -38,7 +38,7 @@
       <img src="assets/img/img_übermich.jpg" alt="eine Lachende Person in einer Gasse">
     </div>
   </section>
-  <section>
+  <section id="Galerie">
     <div>
      <h2>Tierfotografie</h2> 
     </div>
@@ -55,6 +55,29 @@
       <img src="assets/img/img_säntis_landschaft.jpg" alt="Säntis im Alpstein">
       <img src="assets/img/img_wagenlücke_landschaft.jpg" alt="Wagenlücke im Alpstein">
     </div>
+  </section>
+  <section id="Anmelden">
+    <div>
+      <h2>Anmeldung für einen Fotokurs</h2>
+    </div>
+    <div>
+      <p>Du hast interesse an der Tier oder Landschaftsfotografie? Bei mir bist du genau richtig. Melde dich unter folgendem Formular bei mir!</p>
+    </div>
+    <div>
+      <form>
+                        <div class="form-block">
+                            <label for="name">Name</label>
+                            <input type="text" name="name">
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="form-block">
+                            <label for="tel">Telefonnummer</label>
+                            <input type="text" name="tel">
+                            <input type="submit" value="Anmelden">
+                        </div>
+                         </form>
+                         </div>
   </section>
   </main>
 </body>
