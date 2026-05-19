@@ -1,0 +1,17 @@
+/* Browser Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Root Colors */
+:root {
+    --black: (#141414);
+    --white: #fff;
+    --grey: #444444;
+}
+
+
+
