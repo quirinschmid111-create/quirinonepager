@@ -18,14 +18,14 @@
 
 <body>
   <!-- Header -->
-  <header>
+  <header class="header">
     <!-- Navigation -->
     <nav>
       <ul>
-        <li><a href="#startseite">Startseite</a></li>
-        <li><a href="#ueber-mich">Über mich</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#anmelden">Anmelden</a></li>
+        <li><a href="#header">STARTSEITE</a></li>
+        <li><a href="#ueber-mich">ÜBER MICH</a></li>
+        <li><a href="#galerie">GALERIE</a></li>
+        <li><a href="#anmelden">ANMELDEN</a></li>
       </ul>
     </nav>
   </header>
@@ -33,18 +33,25 @@
   <main>
     <!--Start Hero-->
     <section id="startseite">
-      <h1>Bilderecke</h1>
-      <h3>Tier und Landschaftsfotografie</h3>
+      <div class="hero-text">
+        <h1>Bilderecke</h1>
+        <h3>Tier und Landschaftsfotografie</h3>
+      </div>
     </section>
     <!--start Über mich-->
     <section id="ueber-mich">
-      <h2>Über mich</h2>
-      <p>
-        Ich bin leidenschaftlicher Hobbyfotograf und liebe es, besondere Momente mit der Kamera festzuhalten.
-        Ob Natur, Landschaften, Tiere oder einfach den Alltag. Ich finde überall Motive, die eine Geschichte erzählen.
-      </p>
-      <div>
-        <img src="assets/img/img_übermich.jpg" alt="eine Lachende Person in einer Gasse">
+      <div class="übermich-container">
+        <h2>Über mich</h2>
+        <div class="übermich-text">
+          <p>
+            Ich bin leidenschaftlicher Hobbyfotograf und liebe es, besondere Momente mit der Kamera festzuhalten.
+            Ob Natur, Landschaften, Tiere oder einfach den Alltag. Ich finde überall Motive, die eine Geschichte
+            erzählen.
+          </p>
+        </div>
+        <div class="übermich-img">
+          <img src="assets/img/img_übermich.jpg" alt="eine Lachende Person in einer Gasse">
+        </div>
       </div>
     </section>
     <!--Section Galerie-->

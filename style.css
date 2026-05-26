@@ -58,3 +58,78 @@ label {
     font-weight: 300;
     font-size: 1.2rem;
 }
+
+/* header */
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5% 8%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 700;
+}
+
+.line-nav {
+    border-bottom: 1px solid white;
+}
+
+/* hero */
+#startseite {
+    position: relative;
+    height: 100vh;
+    background-image: url("assets/img/img_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* Animation fade-in left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-text {
+    opacity: 0;
+    animation: slideInLeft 1.5s ease-out forwards;
+}
