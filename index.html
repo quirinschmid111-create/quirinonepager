@@ -17,101 +17,127 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#startseite">STARTSEITE</a></li>
-        <li><a href="#ueber-mich">ÜBER MICH</a></li>
-        <li><a href="#galerie">GALERIE</a></li>
-        <li><a href="#anmelden">ANMELDEN</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Start Main -->
-  <main>
-    <!--Start Hero-->
-    <section id="startseite">
-      <div class="hero-text">
-        <h1>Bilderecke</h1>
-        <h3>Tier und Landschaftsfotografie</h3>
-      </div>
-    </section>
-    <!--start Über mich-->
-    <section id="ueber-mich" class="section-basic">
-      <div class="übermich-container">
-        <div class="übermich-text">
-          <h2>Über mich</h2>
-          <p>
-            Ich bin leidenschaftlicher Hobbyfotograf und liebe es, besondere Momente mit der Kamera festzuhalten.
-            Ob Natur, Landschaften, Tiere oder einfach den Alltag. Ich finde überall Motive, die eine Geschichte
-            erzählen.
-          </p>
+  <!--darkmode-->
+  <input type="checkbox" id="toggle">
+  <div class="seite">
+    <!-- Header -->
+    <header class="header" id="header">
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#startseite">STARTSEITE</a></li>
+          <li><a href="#ueber-mich">ÜBER MICH</a></li>
+          <li><a href="#galerie">GALERIE</a></li>
+          <li><a href="#stille">STILLE</a></li>
+          <li><a href="#anmelden">ANMELDEN</a></li>
+        </ul>
+      </nav>
+      <label class="darkmode" for="toggle">DARKMODE</label>
+      <!-- Burger menu -->
+      <a href="#" class="menu-icon">
+        <i class="iconoir-menu-scale open"></i>
+        <i class="iconoir-xmark close"></i>
+      </a>
+    </header>
+    <!--JS Laden-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Start Main -->
+    <main>
+      <!--Start Hero-->
+      <section id="startseite">
+        <div class="hero-text">
+          <h1>Bilderecke</h1>
+          <h3>Tier und Landschaftsfotografie</h3>
         </div>
-        <div class="übermich-img">
-          <img src="assets/img/img_übermich.jpg" alt="eine Lachende Person in einer Gasse">
+      </section>
+      <!--start Über mich-->
+      <section id="ueber-mich" class="section-basic">
+        <div class="uebermich-container">
+          <div class="uebermich-text">
+            <h2>Über mich</h2>
+            <p>
+              Ich bin leidenschaftlicher Hobbyfotograf und liebe es, besondere Momente mit der Kamera festzuhalten.
+              Ob Natur, Landschaften, Tiere oder einfach den Alltag. Ich finde überall Motive, die eine Geschichte
+              erzählen.
+            </p>
+          </div>
+          <div class="uebermich-img">
+            <img src="assets/img/img_übermich.jpg" alt="eine Lachende Person in einer Gasse">
+          </div>
         </div>
-      </div>
-    </section>
-    <!--Section Galerie-->
-    <section class="galerie" id="galerie">
-      <h2>Tierfotografie</h2>
-      <div class="vertikal-scroll">
-        <img id="fuchs" src="assets/img/img_fuchs_tierfotografie.jpg" alt="schlafender Fuchs">
-        <img src="assets/img/img_reh_tierfotografie.jpg" alt="ein Reh">
-        <img src="assets/img/img_eisvogel_tierfotografie.jpg" alt="ein Eisvogel auf einem Ast">
-        <img src="assets/img/img_hermelin_tierfotografie.jpg" alt="ein Hermelin im Gras">
-        <img src="assets/img/img_biber_tierfotografie.jpg" alt="der Biber auf seinem Damm">
-      </div>
-    </section>
-    <section class="galerie">
-      <h2>Landschaftsfotografie</h2>
-      <div class="horizontal-scroll">
-        <img src="assets/img/img_säntis_landschaft.jpg" alt="Säntis im Alpstein">
-        <img src="assets/img/img_wagenlücke_landschaft.jpg" alt="Wagenlücke im Alpstein">
-        <img src="assets/img/img_hütte_landschaftsfotografie.jpg" alt="eine Hütte im Schnee">
-        <img src="assets/img/img_schnee_landschaftsfotografie.jpg" alt="die Schneelandschaft">
-        <img src="assets/img/img_sonneneinstrahlung_landschaftsfotografie.jpg" alt="Sonneneinstrahlung durch den Wald">
-      </div>
-    </section>
-    <!--Section Anmelden-->
-    <section id="anmelden" class="section-basic">
-      <h2>Anmeldung für einen Fotokurs</h2>
+      </section>
+      <!--Section Galerie-->
+      <section class="galerie" id="galerie">
+        <h2>Tierfotografie</h2>
+        <div class="tierfotografie">
+          <img id="fuchs" src="assets/img/img_fuchs_tierfotografie.jpg" alt="schlafender Fuchs">
+          <img src="assets/img/img_reh_tierfotografie.jpg" alt="ein Reh">
+          <img src="assets/img/img_eisvogel_tierfotografie.jpg" alt="ein Eisvogel auf einem Ast">
+          <img src="assets/img/img_hermelin_tierfotografie.jpg" alt="ein Hermelin im Gras">
+          <img src="assets/img/img_biber_tierfotografie.jpg" alt="der Biber auf seinem Damm">
+        </div>
+      </section>
+      <section class="galerie">
+        <h2>Landschaftsfotografie</h2>
+        <div class="landschaftsfotografie">
+          <img src="assets/img/img_säntis_landschaft.jpg" alt="Säntis im Alpstein">
+          <img src="assets/img/img_wagenlücke_landschaft.jpg" alt="Wagenlücke im Alpstein">
+          <img src="assets/img/img_schnee_landschaftsfotografie.jpg" alt="die Schneelandschaft">
+          <img src="assets/img/img_sonneneinstrahlung_landschaftsfotografie.jpg"
+            alt="Sonneneinstrahlung durch den Wald">
+        </div>
+      </section>
+      <!--Section Video-->
+      <section id="stille" class="section-basic">
+        <div>
+          <h2>Stille in der Natur</h2>
+        </div>
+        <div class="video">
+          <video controls>
+            <source src="assets/video/QuirinSchmid_Video_1.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video leider nicht...
+          </video>
+        </div>
+      </section>
+      <!--Section Anmelden-->
+      <section id="anmelden" class="section-basic">
+        <h2>Anmeldung für einen Fotokurs</h2>
+        <div>
+          <p>Du hast Interesse an der Tier oder Landschaftsfotografie? Bei mir bist du genau richtig. </p>
+          <p>Melde dich unter folgendem Formular bei mir!</p>
+        </div>
+        <div>
+          <!--Anmelde-Formular-->
+          <form class="formular">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email">
+              <label for="tel">Telefonnummer</label>
+              <input type="text" id="tel" name="tel">
+            </div>
+            <div>
+              <input type="submit" value="Anmelden">
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Start footer -->
+    <footer id="footer">
       <div>
-        <p>Du hast Interesse an der Tier oder Landschaftsfotografie? Bei mir bist du genau richtig. </p>
-        <p>Melde dich unter folgendem Formular bei mir!</p>
+        <p>Quirin Schmid</p>
+        <p>Steinstrasse 12</p>
+        <p>078 131 93 67</p>
+        <p>info@bilderecke.com</p>
       </div>
       <div>
-        <!--Anmelde-Formular-->
-        <form class="formular">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email">
-            <label for="tel">Telefonnummer</label>
-            <input type="text" id="tel" name="tel">
-          </div>
-          <div>
-            <input type="submit" value="Anmelden">
-          </div>
-        </form>
+        <p>©Bilderecke</p>
       </div>
-    </section>
-  </main>
-  <!-- Start footer -->
-  <footer id="footer">
-    <div>
-      <p>Quirin Schmid</p>
-      <p>Steinstrasse 12</p>
-      <p>078 131 93 67</p>
-      <p>info@bilderecke.com</p>
-    </div>
-    <div>
-      <p>©Bilderecke</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
