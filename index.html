@@ -18,11 +18,11 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="header">
     <!-- Navigation -->
     <nav>
       <ul>
-        <li><a href="#header">STARTSEITE</a></li>
+        <li><a href="#startseite">STARTSEITE</a></li>
         <li><a href="#ueber-mich">ÜBER MICH</a></li>
         <li><a href="#galerie">GALERIE</a></li>
         <li><a href="#anmelden">ANMELDEN</a></li>
@@ -39,10 +39,10 @@
       </div>
     </section>
     <!--start Über mich-->
-    <section id="ueber-mich">
+    <section id="ueber-mich" class="section-basic">
       <div class="übermich-container">
-        <h2>Über mich</h2>
         <div class="übermich-text">
+          <h2>Über mich</h2>
           <p>
             Ich bin leidenschaftlicher Hobbyfotograf und liebe es, besondere Momente mit der Kamera festzuhalten.
             Ob Natur, Landschaften, Tiere oder einfach den Alltag. Ich finde überall Motive, die eine Geschichte
@@ -55,39 +55,45 @@
       </div>
     </section>
     <!--Section Galerie-->
-    <section id="galerie">
+    <section class="galerie" id="galerie">
       <h2>Tierfotografie</h2>
-      <div>
-        <img src="assets/img/img_fuchs_tierfotografie.jpg" alt="schlafender Fuchs">
+      <div class="vertikal-scroll">
+        <img id="fuchs" src="assets/img/img_fuchs_tierfotografie.jpg" alt="schlafender Fuchs">
         <img src="assets/img/img_reh_tierfotografie.jpg" alt="ein Reh">
+        <img src="assets/img/img_eisvogel_tierfotografie.jpg" alt="ein Eisvogel auf einem Ast">
+        <img src="assets/img/img_hermelin_tierfotografie.jpg" alt="ein Hermelin im Gras">
+        <img src="assets/img/img_biber_tierfotografie.jpg" alt="der Biber auf seinem Damm">
       </div>
     </section>
-    <section>
+    <section class="galerie">
       <h2>Landschaftsfotografie</h2>
-      <div>
+      <div class="horizontal-scroll">
         <img src="assets/img/img_säntis_landschaft.jpg" alt="Säntis im Alpstein">
         <img src="assets/img/img_wagenlücke_landschaft.jpg" alt="Wagenlücke im Alpstein">
+        <img src="assets/img/img_hütte_landschaftsfotografie.jpg" alt="eine Hütte im Schnee">
+        <img src="assets/img/img_schnee_landschaftsfotografie.jpg" alt="die Schneelandschaft">
+        <img src="assets/img/img_sonneneinstrahlung_landschaftsfotografie.jpg" alt="Sonneneinstrahlung durch den Wald">
       </div>
     </section>
     <!--Section Anmelden-->
-    <section id="anmelden">
+    <section id="anmelden" class="section-basic">
       <h2>Anmeldung für einen Fotokurs</h2>
       <div>
-        <p>Du hast Interesse an der Tier oder Landschaftsfotografie? Bei mir bist du genau richtig. Melde dich unter
-          folgendem Formular bei mir!</p>
+        <p>Du hast Interesse an der Tier oder Landschaftsfotografie? Bei mir bist du genau richtig. </p>
+        <p>Melde dich unter folgendem Formular bei mir!</p>
       </div>
       <div>
         <!--Anmelde-Formular-->
-        <form>
+        <form class="formular">
           <div>
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
             <label for="email">Email</label>
             <input type="text" id="email" name="email">
-          </div>
-          <div>
             <label for="tel">Telefonnummer</label>
             <input type="text" id="tel" name="tel">
+          </div>
+          <div>
             <input type="submit" value="Anmelden">
           </div>
         </form>
@@ -95,11 +101,11 @@
     </section>
   </main>
   <!-- Start footer -->
-  <footer>
+  <footer id="footer">
     <div>
-      <p>Bilderecke</p>
-      <p>Maxmusterstrasse 67</p>
-      <p>076 670 67 67</p>
+      <p>Quirin Schmid</p>
+      <p>Steinstrasse 12</p>
+      <p>078 131 93 67</p>
       <p>info@bilderecke.com</p>
     </div>
     <div>

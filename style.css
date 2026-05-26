@@ -24,7 +24,7 @@ a {
 
 img {
     width: 100%;
-    height: 250%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -61,18 +61,20 @@ label {
 
 /* header */
 .header {
-    background-color: black;
-    color: white;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: var(--black);
+    color: var(--white);
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 2.5% 8%;
+    border-bottom: 1px solid var(--white);
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
     gap: 30px;
 }
 
@@ -81,12 +83,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--white);
     font-weight: 700;
 }
 
-.line-nav {
-    border-bottom: 1px solid white;
+nav ul li a:hover {
+    color: var(--grey);
+}
+
+/* Scroll */
+section {
+    scroll-margin-top: 90px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* hero */
@@ -99,21 +110,15 @@ nav ul li a {
     display: flex;
     align-items: center;
     padding: 0 8%;
-    color: white;
+    color: var(--white);
 }
 
 .hero-text h1 {
-    font-size: 5rem;
-    margin-bottom: 10px;
-}
-
-.hero-text h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
+    margin-bottom: -8px;
 }
 
 .hero-text {
-    position: relative;
+    margin-top: 150px;
     z-index: 2;
 }
 
@@ -123,6 +128,7 @@ nav ul li a {
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -132,4 +138,124 @@ nav ul li a {
 .hero-text {
     opacity: 0;
     animation: slideInLeft 1.5s ease-out forwards;
+}
+
+/* Über Mich */
+.section-basic {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 80px 8%;
+}
+
+/* Grid */
+.übermich-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Bild */
+.übermich-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Text */
+.übermich-text h2 {
+    margin-bottom: 20px;
+}
+
+.übermich-text p {
+    margin-bottom: 15px;
+}
+
+/* Galerie Tierfotografie */
+.galerie {
+    background-color: var(--grey);
+    padding: 80px 8%;
+    color: var(--white);
+}
+
+/* Scrolleffekt */
+.vertikal-scroll {
+    max-height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scrollbar-width: none;
+    margin-top: 15px;
+}
+
+/* Bilder */
+.vertikal-scroll img {
+    width: 100%;
+    height: 450px;
+}
+
+.vertikal-scroll #fuchs {
+    object-position: center bottom;
+}
+
+/* Galerie Landschaftsfotografie */
+.horizontal-scroll {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+
+.horizontal-scroll img {
+    width: 400px;
+    height: 600px;
+}
+
+/* Anmeldeformular */
+#anmelden h2 {
+    margin-top: 30px;
+}
+
+.formular {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formular div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formular input {
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    font-size: 1rem;
+}
+
+.formular input[type="submit"] {
+    margin-top: 10px;
+    background-color: var(--grey);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Footer */
+#footer {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--white);
+    grid-template-columns: 1fr 1fr;
+    padding: 8vh 8%;
+    align-items: flex-end;
 }
