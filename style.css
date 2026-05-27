@@ -15,21 +15,6 @@
     --grey: #444444;
 }
 
-/*-- Darkmode --*/
-@media (prefers-color-scheme: dark) {
-    :root {
-        --black: #141414;
-        --white: #fff
-;
-        --textblack:#141414;
-        --textwhite: white;
-    }
-
-    .darkmode {
-        display: none;
-    }
-}
-
 /* Checkbox unsichtbar*/
 #toggle {
     display: none;
@@ -350,9 +335,24 @@ html {
     align-items: flex-end;
 }
 
+/*-- Darkmode --*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black: #141414;
+        --white: #fff;
+        --textblack: #141414;
+        --textwhite: white;
+    }
+
+    .darkmode {
+        display: none;
+    }
+}
+
 /* ------------------Media Queries------------------ */
 @media screen and (max-width: 1100px) {
 
+    /* Titel und Untertitel mittig und Fadein Animation */
     #startseite {
         justify-content: center;
         text-align: center;
@@ -360,12 +360,8 @@ html {
 
     .hero-text {
         margin-top: 0;
-    }
-
-    .hero-text {
         animation: fade-in 1s ease-out forwards;
     }
-
 }
 
 /* ------------------Media Queries------------------ */
